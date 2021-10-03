@@ -1,0 +1,6 @@
+[jobs.test-submit]
+image = { source = "dockerfile", path = ".", tag = "my-pascal-lexer" }
+
+run = [
+  "./out < $input",
+]
